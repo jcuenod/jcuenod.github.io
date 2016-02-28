@@ -81,7 +81,7 @@
         repos = repos || [];
         page = page || 1;
 
-        var uri = "https://api.github.com/orgs/twitter/repos?callback=?"
+        var uri = "https://api.github.com/users/jcuenod/repos?callback=?"
                 + "&per_page=100"
                 + "&page="+page;
 
@@ -141,7 +141,7 @@
       function getNumMembers(page, numMembers) {
         var page = page || 1;
         var numMembers = numMembers || 0;
-        var membersUri = "https://api.github.com/orgs/twitter/members?callback=?"
+        var membersUri = "https://api.github.com/users/jcuenod/members?callback=?"
           + "&per_page=100"
           + "&page="+page;
 

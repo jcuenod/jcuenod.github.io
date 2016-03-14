@@ -2162,7 +2162,21 @@
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				/*background-image: url("../../images/banner.jpg");*/
+				background: rgba(0,0,0,0.3);
+				text-shadow: 0 0 50px #555, 0 0 5px #555, 0 0 20px #555;
+				min-height: 100vh;
+			}
+			#main > section.one:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: url("http://hdwyn.com/wallpaper_mirror/south_africa_republic_of_texture_background_hd-wallpaper-49005.jpg");
+				content: "";
+				z-index: -1;
+				background-size: cover;
 			}
 
 			#main > section.two {
@@ -2540,10 +2554,6 @@
 
 
 /** CUSTOM RULES **/
-
-	#top {
-		min-height: 100vh;
-	}
 
 	.repo {
 		width: 280px;

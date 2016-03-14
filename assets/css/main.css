@@ -2541,6 +2541,10 @@
 
 /** CUSTOM RULES **/
 
+	#top {
+		min-height: 100vh;
+	}
+
 	.repo {
 		width: 280px;
 		height: 150px;

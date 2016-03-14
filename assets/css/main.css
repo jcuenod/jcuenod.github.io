@@ -1587,6 +1587,7 @@
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: inherit;
 		text-decoration: none;
+		font-weight: bold;
 	}
 
 		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
@@ -1604,6 +1605,7 @@
 
 			h2.alt strong {
 				color: #666;
+				font-weight: bold;
 			}
 
 	h3 {
@@ -2177,6 +2179,10 @@
 				content: "";
 				z-index: -1;
 				background-size: cover;
+			}
+			#main > section.one p,
+			#main > section.one h2 {
+				color: #eee;
 			}
 
 			#main > section.two {

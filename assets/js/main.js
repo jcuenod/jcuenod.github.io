@@ -185,13 +185,9 @@
         repos = repos || [];
         page = page || 1;
 
-        var uri = "https://api.github.com/users/jcuenod/repos?callback=?" + "&per_page=100" + "&page=" + page;
-
-        //$.getJSON(uri, function (result) {
-        // if (result.data && result.data.length > 0) {
-        //     repos = repos.concat(result.data);
-        //     addRepos(repos, page + 1);
-        // } else {
+        var uri = "https://api.github.com/users/jcuenod/repos?" +
+			"per_page=100&" +
+			"page=" + page;
         function replaceJSON(repos) {
                 $(function() {
                     $("#num-repos").text(repos.length);
@@ -236,7 +232,11 @@
                 });
             // }
         } //);
-        replaceJSON(gitdata.data);
+		$.getJSON(uri, function (gitdata) {
+		    if (gitdata && gitdata.length > 0) {
+	            replaceJSON(gitdata);
+			}
+        });
     }
     addRepos();
     function addStackOverflowRep() {

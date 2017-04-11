@@ -643,6 +643,12 @@
 			});
 		})(i);
 	}
+	var hoverSelectors = ["search--new_term", "search--search_term", "search--remove_search_term", "search--search_settings", "search--do_search", "header--settings", "reference--chapter_arrow", "reference--reference_text", "menu_parent"]
+	hoverSelectors.forEach((x) => {
+		document.querySelectorAll("." + x).forEach((el) => el.addEventListener("click",function(e){
+			console.log("asdf")
+		}))
+	},false);
 	</script>
 </body>
 </html>

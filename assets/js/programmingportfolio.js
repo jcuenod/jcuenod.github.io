@@ -59,7 +59,7 @@
 
                     $currentRow = $GridRow.clone()
                     $.each(repos, function(i, repo) {
-                        if (i > 1 && i - 1 % 3 == 0) {
+                        if (i > 1 && (i - 1) % 3 == 0) {
                             $currentRow.appendTo(".projects")
                             $currentRow = $GridRow.clone()
                         }

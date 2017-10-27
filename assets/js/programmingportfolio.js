@@ -1,10 +1,10 @@
 (function() {
 
     const $GridRow = $("<div class='grid no-gutters'>")
-    const GridItem = ({ html_url, title, description }) => `
+    const GridItem = ({ html_url, name, description }) => `
         <div class='unit one-third'>
           <div class='project'>
-            <h4 class='project-title'><a href='${html_url}'>${title}</a></h4>
+            <h4 class='project-title'><a href='${html_url}'>${name}</a></h4>
             <p>${description}</p>
           </div>
         </div>
@@ -59,7 +59,7 @@
 
                     $currentRow = $GridRow.clone()
                     $.each(repos, function(i, repo) {
-                        if (i > 1 && (i - 1) % 3 == 0) {
+                        if (i > 1 && i % 3 == 0) {
                             $currentRow.appendTo(".projects")
                             $currentRow = $GridRow.clone()
                         }

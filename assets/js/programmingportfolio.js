@@ -60,13 +60,13 @@
                     $currentRow = $GridRow.clone()
                     $.each(repos, function(i, repo) {
                         if (i > 1 && i - 1 % 3 == 0) {
-                            $currentRow.appendTo("#repos")
+                            $currentRow.appendTo(".projects")
                             $currentRow = $GridRow.clone()
                         }
                         $currentRow.append($(GridItem(repo)))
                         // addRepo(repo)
                     })
-                    $currentRow.appendTo("#repos")
+                    $currentRow.appendTo(".projects")
 
                     // Sort by most-recently pushed to.
                     // repos.sort(function(a, b) {

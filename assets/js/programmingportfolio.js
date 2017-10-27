@@ -4,7 +4,7 @@
     const GridItem = ({ html_url, title, description }) => `
         <div class='unit one-third'>
           <div class='project'>
-            <h4 class='project-title'><a href='${url}'>${title}</a></h4>
+            <h4 class='project-title'><a href='${html_url}'>${title}</a></h4>
             <p>${description}</p>
           </div>
         </div>

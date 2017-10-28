@@ -13,3 +13,36 @@
 
 @import "site";             // Styles specific to the site architecture
 @import "page";             // Styles specific to the pages
+
+// Custom rules
+.sorep {
+	font-weight: 500;
+	font-size: 90%;
+}
+.reputation {
+	margin-left: 1em;
+}
+.badge {
+	position: relative;
+	margin-left: 1.5em;
+}
+.badge::before {
+	position: absolute;
+	left: -1em;
+	display: block;
+	content: "";
+	border-radius: 50%;
+	height: 0.5em;
+	width: 0.5em;
+	top: 50%;
+	margin-top: -0.25em;
+}
+.gold::before {
+	background-color: #ec2;
+}
+.silver::before {
+	background-color: #aaa;
+}
+.bronze::before {
+	background-color: #d84;
+}

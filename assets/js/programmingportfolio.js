@@ -45,7 +45,7 @@
 
                 let $currentRow = $GridRow.clone()
                 let insertCount = 0
-                $.each(repos, function(repo) {
+                $.each(repos, function(counter, repo) {
                     if (insertCount > 1 && insertCount % 3 == 0) {
                         $currentRow.appendTo(".projects")
                         $currentRow = $GridRow.clone()

@@ -18,7 +18,7 @@ github_username: jcuenod
 github_source: jcuenod.github.com
 
 # Put your ga tracking code below
-google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-73720535-1'
 
 # Pagination settings
 paginate: 5                           # number of posts to show per page

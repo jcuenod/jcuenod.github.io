@@ -14,7 +14,7 @@
 	padding-top: 3px;
 	box-sizing: border-box;
 }
-.highlight {
+.block:hover, .block.highlight {
 	background: #e43;
 	color: #fff;
 }
@@ -46,7 +46,7 @@
 	cursor: pointer;
 	color: #999;
 }
-.data:hover {
+.data:hover, .data.highlight {
 	color: #d00;
 }
 </style>
@@ -105,17 +105,17 @@
 
 			const metadata = {
 				"for / by": {
-					david: ["3", "4", "5", "6", "7", "8", "9", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "31", "32", "34", "35", "36", "37", "38", "39", "40", "41", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "68", "69", "70", "86", "101", "103", "108", "109", "110", "122", "124", "131", "133", "138", "139", "140", "141", "142", "143", "144", "145"],
-					asaph: ["50", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83"],
-					ethan: ["89"],
-					juduthun: ["39"],
-					heman: ["88"],
-					moses: ["90"],
-					solomon: ["72", "127"],
-					"sons of korah": ["42", "44", "45", "46", "47", "48", "49", "84", "85", "87", "88"]
+					david: [3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 34, 35, 36, 37, 38, 39, 40, 41, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 68, 69, 70, 86, 101, 103, 108, 109, 110, 122, 124, 131, 133, 138, 139, 140, 141, 142, 143, 144, 145],
+					asaph: [50, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83],
+					ethan: [89],
+					juduthun: [39],
+					heman: [88],
+					moses: [90],
+					solomon: [72, 127],
+					"sons of korah": [42, 44, 45, 46, 47, 48, 49, 84, 85, 87, 88]
 				},
 				other: {
-					ascents: ["120","121","122","123","124","125","126","127","128","129","130","131","132","133","134"]
+					ascents: [120,121,122,123,124,125,126,127,128,129,130,131,132,133,134]
 				},
 
 				// ALL THIS DATA IS FROM http://www.crivoice.org/psalmtypes.html
@@ -171,6 +171,7 @@
 				})
 			}
 
+			const mapOfContainers = []
 			Object.keys(metadata).forEach(m => {
 				$("#dataContainer").append($("<div>").addClass("heading").text(m))
 				Object.keys(metadata[m]).forEach(f => {
@@ -180,11 +181,32 @@
 						unHighlightFor(metadata[m][f])
 					})
 					$("#dataContainer").append(s)
+					mapOfContainers.push({
+						name: f,
+						list: metadata[m][f],
+						domNode: s
+					})
 				})
 			})
-		})
 
-	allkeys = metadata.reduce((a,c) => a.concat(...c.reduce((b,d) => b.concat(...d), [])), [])
+			const highlightDataPoints = (ps_idx) => {
+				mapOfContainers.filter(c => c.list.includes(ps_idx)).forEach(c => {
+					c.domNode.addClass("highlight")
+				})
+			}
+			const unHighlightDataPoints = (ps_idx) => {
+				mapOfContainers.filter(c => c.list.includes(ps_idx)).forEach(c => {
+					c.domNode.removeClass("highlight")
+				})
+			}
+			$(".block").hover((e) => {
+				const idx = $(e.target).index(".block") + 1
+				highlightDataPoints(idx)
+			},(e) => {
+				const idx = $(e.target).index(".block") + 1
+				unHighlightDataPoints(idx)
+			},)
+		})
 
 	</script>
 </body>

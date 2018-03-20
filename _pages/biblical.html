@@ -4,43 +4,64 @@ title: Biblical Studies
 subtitle: Biblical studier by day
 desc: Biblical studier by day
 permalink: /biblical/
-items:
-  - title: "PhD Biblical & Theological Studies: Old Testament"
-    link: #
-    date: (in progress)
-    desc: Wheaton College, Wheaton, IL
-  - title: MA Biblical Exegesis
-    link: #
-    date: 2017-05-20
-    desc: Wheaton College, Wheaton, IL
-  - title: Honours Theology/Biblical Studies (OT Emphasis)
-    link: #
-    date: 2012-12-10
-    desc: George Whitefield College, Cape Town, South Africa
-  - title: BTh Theology/Biblical Studies
-    link: #
-    date: 2011-12-10
-    desc: George Whitefield College, Cape Town, South Africa
+sections:
+  - title: Education
+    items:
+    - title: "PhD Biblical & Theological Studies: Old Testament"
+      link: #
+      altdate: (in progress)
+      desc: Wheaton College, Wheaton, IL
+    - title: MA Biblical Exegesis
+      link: #
+      date: 2017-05-20
+      desc: Wheaton College, Wheaton, IL
+    - title: Honours Theology/Biblical Studies (OT Emphasis)
+      link: #
+      date: 2012-12-10
+      desc: George Whitefield College, Cape Town, South Africa
+    - title: BTh Theology/Biblical Studies
+      link: #
+      date: 2011-12-10
+      desc: George Whitefield College, Cape Town, South Africa
+  - title: Publications
+    items:
+    - title: Neotestamentica 49.2
+      link: #
+      date: 2015-01-01
+      desc: Review of Ian Boxall's "Discovering Mathew"
+  - title: Conference Presentations
+    items:
+    - title: ETS Regional Conference (Midwest)
+      link: #
+      date: 2016-03-11
+      desc: An Investigation into the Use of ‫ירא‬ in Deuteronomy and its Correspondence with the NT Idea of Faith
+
 ---
 
-<h2>Education</h2>
+{% for section in page.sections %}
+  <h2>{{ item.title }}</h2>
 
-<ul class="post-list">
-  {% for post in page.items %}
-  <li class="post">
-    <a class="post-link" href="{{ post.link }}">
-      <h4 class="post-title">{{ post.title }}</h4>
-      <time class="post-date" datetime="{{ post.date }}">
-      {% assign m = post.date | date: "%B" %}
-      {% case m %}
-        {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
-        {% when 'September' %}Sept.
-        {% else %}{{ post.date | date: "%b" }}.
-        {% endcase %}
-      {{ post.date | date: "%Y" }}
-      </time>
-      <p class="post-desc">{{ post.desc }}</p>
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+  <ul class="post-list">
+    {% for item in section.items %}
+    <li class="post">
+      <a class="post-link" href="{{ post.link }}">
+        <h4 class="post-title">{{ item.title }}</h4>
+        {% if item.date %}
+          <time class="post-date" datetime="{{ item.date }}">
+          {% assign m = item.date | date: "%B" %}
+          {% case m %}
+            {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
+            {% when 'September' %}Sept.
+            {% else %}{{ item.date | date: "%b" }}.
+            {% endcase %}
+          {{ item.date | date: "%Y" }}
+          </time>
+        {% else %}
+          <div class="post-date">{{ item.altdate }}</div>
+        {% endif %}
+        <p class="post-desc">{{ item.desc }}</p>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

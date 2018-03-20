@@ -4,25 +4,43 @@ title: Biblical Studies
 subtitle: Biblical studier by day
 desc: Biblical studier by day
 permalink: /biblical/
+items:
+  - title: PhD Biblical & Theological Studies: Old Testament
+    link:
+    date: 2020-05-20
+    desc: Wheaton College, Wheaton, IL
+  - title: MA Biblical Exegesis
+    link:
+    date: 2017-05-20
+    desc: Wheaton College, Wheaton, IL
+  - title: Honours Theology/Biblical Studies (OT Emphasis)
+    link:
+    date: 2012-12-10
+    desc: George Whitefield College, Cape Town, South Africa
+  - title: BTh Theology/Biblical Studies
+    link:
+    date: 2011-12-10
+    desc: George Whitefield College, Cape Town, South Africa
 ---
 
-<p>Mea speciem facta postquam quae ab catulo, bracchia nepotis: est. Suae <strong>posset cingebant</strong> patris</p>
+<h2>Education</h2>
 
-<div class="projects">
-  <div class="grid no-gutters">
-    <div class="unit one-third">
-      <div class="project">
-        <h4 class="project-title"><a href="sample-work/">Project 1</a></h4>
-        <p>Laeva clamat qui Perseus erit, discrimine ramos illa <a href="sample-work/">restabat</a>: bracchia, templa, ab spectans. Monte contigit Rhodosque manus mille est omnia eiusdem nondum: qui Modo.</p>
-      </div>
-    </div>
-
-    <div class="unit one-third">
-      <div class="project">
-        <h4 class="project-title"><a href="sample-work/">Project 2</a></h4>
-        <p><em>Quoque videri</em>: sibi in qua nexibus rapto. Mea tecta! Orbem haut non procumbit <em>facit</em>.</p>
-      </div>
-    </div>
-  </div><!-- grid -->
-</div>
-
+<ul class="post-list">
+  {% for post in page.items %}
+  <li class="post">
+    <a class="post-link" href="{{ post.url }}">
+      <h4 class="post-title">{{ post.title }}</h4>
+      <time class="post-date" datetime="{{ post.date }}">
+      {% assign m = post.date | date: "%B" %}
+      {% case m %}
+        {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
+        {% when 'September' %}Sept.
+        {% else %}{{ post.date | date: "%b" }}.
+        {% endcase %}
+      {{ post.date | date: "%Y" }}
+      </time>
+      <p class="post-desc">{{ post.desc }}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

@@ -7,8 +7,12 @@ permalink: /software/
 ---
 
 ## Parabible
-<div class="lead lead-about">If you see nothing else of what I am working on, you should see <https://parabible.com/>.</div>
-<p>Parabible is a tool that has transformed the way I do Old Testament studies by faciliating pretty sophisticated searches by letting users build searches based on morphological data quickly and easily (to understand a bit more of that, take a look at the gifs posted on <https://twitter.com/parabible_com>)</p>
+<div class="lead lead-about">
+	If you see nothing else of what I am working on, you should see <https://parabible.com/>.
+</div>
+<p>
+	Parabible is a tool that has transformed the way I do Old Testament studies by faciliating pretty sophisticated searches by letting users build searches based on morphological data quickly and easily (to understand a bit more of that, take a look at the gifs posted on <https://twitter.com/parabible_com>)
+</p>
 
 ## Portfolio
 

@@ -6,14 +6,15 @@ desc: Hobbyist software engineer by night
 permalink: /software/
 ---
 
-<h2>Parabible</h2>
-<div class="lead lead-about">If you see nothing else of what I am working on, you should see <a href="https://parabible.com/">parabible.com</a>.</div>
+## Parabible
+<div class="lead lead-about">If you see nothing else of what I am working on, you should see <https://parabible.com/>.</div>
 <p>Parabible is a tool that has transformed the way I do Old Testament studies by faciliating pretty sophisticated searches by letting users build searches based on morphological data quickly and easily (to understand a bit more of that, take a look at the gifs posted on <https://twitter.com/parabible_com>)</p>
 
-<h2>Portfolio</h2>
-<p>Here are a few ways you can get an idea of my coding more generally...</p>
+## Portfolio
 
-<h3>StackOverflow Reputation</h2>
+Here are a few ways you can get an idea of my coding more generally...
+
+### StackOverflow Reputation
 <p class="sorep">
   <a href="https://stackoverflow.com/users/123415/jcuenod">Profile:</a>
   <span class="reputation">19,000</span>
@@ -22,7 +23,7 @@ permalink: /software/
   <span class="badge bronze">79</span>
 </p>
 
-<h3>Github Repositories</h2>
+### Github Repositories
 <div class="projects">
 </div>
 

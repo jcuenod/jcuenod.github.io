@@ -37,9 +37,9 @@ navigation:
   - title: Software Development
     url: /software/
     desc: Hobbyist programming projects
-  - title: About
-    url: /about/
-    desc: Curriculum vitae
+    #- title: About
+    #url: /about/
+    #desc: Curriculum vitae
 
 # Used by Jekyll to recognize what is a post and what is a page
 defaults:

@@ -5,7 +5,7 @@ layout: default
 <div class="lead pretty-links">
 # James Cuénod
 
-Welcome to my portfolio website. My name is [James Cuénod](about/) and you can find more about me here (or find out how to find out more about me here). I hope to direct you to information about my two basic interests: *biblical studies* (especially the Old Testament) and *software development*.
+Welcome to my portfolio website. My name is [James Cuénod](/) and you can find more about me here (or find out how to find out more about me here). I hope to direct you to information about my two basic interests: *biblical studies* (especially the Old Testament) and *software development*.
 
 Currently I am a PhD student at Wheaton College studying **Old Testament** where I intend to write about **Sabbath Theology**. To find out more about my work in the biblical studies arena, take a look [here](biblical/).
 

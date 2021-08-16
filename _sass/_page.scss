@@ -141,6 +141,10 @@ p.post-desc {
     font-weight: bold;
     border-bottom: 5px solid $brand-light-color;
     padding-bottom: $spacer0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: inline-block;
 
     &:hover,
     &:focus {

@@ -27,6 +27,10 @@ Here are a few ways you can get an idea of my coding more generally...
   <span class="badge bronze">79</span>
 </p>
 
+### Responsible Disclosures
+
+- Access Control vulnerability in Ex Libris Primo VE: <https://github.com/jcuenod/jcuenod.github.io/raw/master/assets/files/Security%20Update%20-%20Ex%20Libris%20Primo%20VE%20Log-in%20Security%20Vulnerability%20-%20September%2005%2C%202021.pdf>
+
 ### Github Repositories
 
 <div class="projects">

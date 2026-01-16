@@ -15,7 +15,5 @@ A lot of the development I do tends to be at the intersection between my discipl
 
 I got into Machine Learning (what is known today as "AI") in 2017 through <https://fast.ai> and have been exploring the use of NLP in biblical studies ever since (including presenting a paper on this topic at SBL in 2019). One of my current side projects is an online tool that uses a fine-tuned ResNet to clean up document scans (e.g., book chapters and journal articles) to help researchers annotate and search their documents. It automatically rotates skew pages, removes border noise, and binarizes pages, which improves OCR quality. It runs on `Cloudflare` workers & pages, `Supabase`, and `Stripe`. The processing is done on `Docker Swarm` in my homelab using `Machine Learning` and a bunch of vision processing (`OpenCV`) tricks. It's live right now at <https://fixpdfs.com>.
 
-I am also working on a custom programming language called [Chicory](https://chicory-lang.github.io/). It has JSX-like syntax and compiles to JSX. But it removes some of the JS footguns (like null, undefined, and type coercion) and it adds guardrails like strong static typing, pattern matching and ADTs with DHM type inference and type checking. Come and contribute at <https://github.com/chicory-lang>!
-
 If you have any questions or want to hunt me down for some reason (other than malice), please feel free to make contact!
 </div>

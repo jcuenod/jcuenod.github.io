@@ -42,7 +42,7 @@ Here are a few ways you can get an idea of my coding more generally...
 ### Package Maintainer
 
 - [usfm3](https://github.com/jcuenod/usfm3) - A (fast) error-tolerant USFM 3.x parser with Rust, Python, and TS bindings
-- [eflomal](https://github.com/jcuenod/eflomal-rs) - Rust reimplementation of eflomal compiled to wasm with an npm package
+- [eflomal-rs](https://github.com/jcuenod/eflomal-rs) - Rust reimplementation of eflomal compiled to wasm with an npm package
 
 
 ### StackOverflow Reputation

@@ -13,7 +13,6 @@ permalink: /:year/:title/   # how should we display posts url
 # Meta settings
 email: j3frea+jcuenod.github@gmail.com
 author: James Cuénod
-twitter_username: jamescuenod
 github_username: jcuenod
 github_source: jcuenod.github.io
 

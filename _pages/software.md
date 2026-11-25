@@ -21,7 +21,7 @@ production: it drafts donor-facing project profiles from field reports, with hum
 <div class="lead lead-about">If you see nothing else of what I am working on, you should see <https://parabible.com/>.
 </div>
 
-Parabible is a tool that has transformed the way I do Old Testament studies by enabling users to perform sophisticated morpho-syntactical searches quickly and easily. See, for example: [What did "gospel" mean? Reading a word through its contemporaries | Parabible](https://www.youtube.com/watch?v=6_t0W52oHV0).
+Parabible is a tool that has transformed the way I do Old Testament studies by enabling users to perform sophisticated morpho-syntactical searches quickly and easily. See, for example: [What did "gospel" mean? Reading a word through its contemporaries \| Parabible](https://www.youtube.com/watch?v=6_t0W52oHV0).
 
 This work also gives rise to interesting spin-off projects like this RAG query tool: <https://ask-gnt.parabible.com>, which queries the same data and can generate graphs/charts based on the output. Try "How does Paul refer to different members of the trinity per epistle? (collapse Jesus and Christ)" and, when generating the visualization, try adding "use percentages".
 

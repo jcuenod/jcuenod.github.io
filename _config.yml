@@ -6,7 +6,7 @@ desc: >
   Personal website for James Cuénod. Portfolio and references
   to work in biblical studies and software engineering.
 
-url: https://jcuenod/github.io      # put your website hosting url here
+url: https://jcuenod.github.io      # put your website hosting url here
 baseurl: ''                 # the subpath of your site, e.g. /blog
 permalink: /:year/:title/   # how should we display posts url
 
@@ -15,7 +15,7 @@ email: j3frea+jcuenod.github@gmail.com
 author: James Cuénod
 twitter_username: jamescuenod
 github_username: jcuenod
-github_source: jcuenod.github.com
+github_source: jcuenod.github.io
 
 # Put your ga tracking code below
 google_analytics: 'UA-73720535-1'
@@ -36,7 +36,7 @@ navigation:
     desc: Biblical and theological work
   - title: Software Development
     url: /software/
-    desc: Hobbyist programming projects
+    desc: Software and AI projects
     #- title: About
     #url: /about/
     #desc: Curriculum vitae
